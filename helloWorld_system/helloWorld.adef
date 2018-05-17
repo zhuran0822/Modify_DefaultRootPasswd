@@ -1,0 +1,26 @@
+sandboxed: false
+start: manual
+
+executables:
+{
+    helloWorld = ( helloComponent )
+}
+
+processes:
+{
+    envVars:
+    {
+        LE_LOG_LEVEL = DEBUG
+    }
+
+    run:
+    {
+        ( helloWorld )
+    }
+}
+
+bindings:
+{
+    helloWorld.helloComponent.le_ips -> modemService.le_ips
+}
+

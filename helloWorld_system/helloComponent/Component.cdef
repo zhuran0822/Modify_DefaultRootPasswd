@@ -1,0 +1,13 @@
+sources:
+{
+    helloWorld.c
+}
+
+requires:
+{
+    api:
+    {
+		$LEGATO_ROOT/interfaces/modemServices/le_ips.api
+    }
+}
+
